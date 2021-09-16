@@ -1,0 +1,19 @@
+.e-date {
+  background: rgb(6, 49, 78);
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  border: 2px solid #fff;
+}
+.month {
+  font-size: 1.3rem;
+}
+.day {
+  font-size: 2.3rem;
+}
+.year {
+  padding: 0.2rem;
+  font-size: 1.4rem;
+}
+.e-date {
+  text-align: center;
+}
