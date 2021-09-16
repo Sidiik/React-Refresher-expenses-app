@@ -18,7 +18,6 @@ function ExpenseItem(props) {
         <div className="e-price">
           <h2> $297.67</h2>
         </div>
-        <button onClick={changeHandler}>Change title</button>
       </div>
     </Card>
   );

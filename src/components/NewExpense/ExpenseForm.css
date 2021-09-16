@@ -1,0 +1,53 @@
+.newexpense {
+  background: #1da8df;
+  color: black;
+  margin-top: 2rem;
+  border-radius: 0.4rem;
+  padding: 2rem;
+}
+
+h1 {
+  padding: 1rem 0;
+}
+.form-controls {
+  display: flex;
+  flex-wrap: wrap;
+}
+.control {
+  width: 100%;
+  margin: 0.4rem;
+  padding: 0.3rem;
+}
+input {
+  padding: 0.2rem;
+  width: 50%;
+  border-radius: 0.2rem;
+  border: 0;
+  outline: 0;
+  font-size: 1.4rem;
+}
+button {
+  font-size: 1.2rem;
+  margin-left: auto;
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  border: 0;
+  outline: 0;
+  background: rgb(255, 0, 255);
+  border: 1px solid white;
+  color: white;
+}
+.button {
+  font-size: 1.2rem;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cancel {
+  margin-left: 0.4rem;
+  cursor: pointer;
+  font-weight: 800;
+  color: rgb(65, 9, 219);
+  font-size: 1.3rem;
+}
