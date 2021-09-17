@@ -1,0 +1,23 @@
+.chartbar-inner {
+  border: 2px solid rgb(20, 221, 177);
+  height: 90%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  width: 30%;
+}
+.chartbar-fill {
+  background-color: white;
+  transition: all 0.3s ease;
+  border-radius: 0.3rem;
+  width: 100%;
+}
+.chartbar-wrapper {
+  height: 100%;
+  width: 100%;
+  margin-left: 1rem;
+}
+.lable {
+  text-align: left;
+}
