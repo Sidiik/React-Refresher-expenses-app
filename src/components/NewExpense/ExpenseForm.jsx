@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./ExpenseForm.css";
-function ExpenseForm({ onSaveExpense }) {
+function ExpenseForm({ onSaveExpense, setShowForm }) {
   const [userInput, setUserInput] = useState({
     title: "",
     price: 0,
@@ -27,6 +27,9 @@ function ExpenseForm({ onSaveExpense }) {
       price: "",
       date: "",
     });
+  };
+  const showFormHandler = () => {
+    setShowForm(false);
   };
 
   return (
@@ -69,7 +72,10 @@ function ExpenseForm({ onSaveExpense }) {
         </div>
         <div className="button">
           <button>Add </button>
-          <p className="cancel"> Cancel</p>
+          <p className="cancel" onClick={showFormHandler}>
+            {" "}
+            Cancel
+          </p>
         </div>
       </div>
     </form>
