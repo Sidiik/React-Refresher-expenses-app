@@ -18,9 +18,15 @@ function App() {
       price: "132",
     },
   ];
+
+  const onEnteredData = (expense) => {
+    const newExpense = expense;
+    console.log(newExpense);
+  };
+
   return (
     <div className="App">
-      <NewExpense />
+      <NewExpense onEnteredData={onEnteredData} />
       <Expenses expenses={expenses} />
     </div>
   );
