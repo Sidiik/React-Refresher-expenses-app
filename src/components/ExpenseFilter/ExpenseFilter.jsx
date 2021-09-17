@@ -6,6 +6,8 @@ export default function ExpenseFilter(props) {
 
   const filterExpenses = (e) => {
     props.onSelectedYear(e.target.value, "filter");
+
+    console.log(new Date(props.expenses.date));
   };
   return (
     <div className="filter">
@@ -21,6 +23,7 @@ export default function ExpenseFilter(props) {
           <option value="2018">2018</option>
           <option value="2019">2019</option>
           <option value="2020">2020</option>
+          <option value="2021">2021</option>
         </select>
       </div>
     </div>

@@ -1,27 +1,19 @@
+import { useState } from "react";
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 function App() {
-  const expenses = [
+  const INITIAL_EXPENSES = [
     {
       title: "car insurance",
       date: new Date(2021, 8, 16),
       price: "232",
     },
-    {
-      title: "Toilet paper",
-      date: new Date(2021, 8, 16),
-      price: "78",
-    },
-    {
-      title: "House rent",
-      date: new Date(2021, 8, 16),
-      price: "132",
-    },
   ];
-
+  const [expenses, setExpenses] = useState(INITIAL_EXPENSES);
   const onEnteredData = (expense) => {
-    const newExpense = expense;
-    console.log(newExpense);
+    setExpenses((prevExpenses) => {
+      return [expense, ...prevExpenses];
+    });
   };
 
   return (

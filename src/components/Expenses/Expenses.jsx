@@ -10,18 +10,27 @@ function Expenses(props) {
     console.log("Expenses jsx", selectedFilter);
     setSelectedYear(selectedFilter);
   };
+  const filteredExpenses = expenses.filter((expense) => {
+    return expense.date.getFullYear().toString() === selectedYear;
+  });
   return (
     <Card>
       <div className="expenses">
         <div className="filter">
           <ExpenseFilter
+            expenses={expenses}
             selected={selectedYear}
             onSelectedYear={filterExpenses}
           />
         </div>
-        <ExpenseItem title={expenses[0].title} date={expenses[0].date} />
-        <ExpenseItem title={expenses[1].title} date={expenses[1].date} />
-        <ExpenseItem title={expenses[2].title} date={expenses[2].date} />
+        {filteredExpenses.map((expense, idx) => (
+          <ExpenseItem
+            key={idx}
+            title={expense.title}
+            price={expense.price}
+            date={expense.date}
+          />
+        ))}
       </div>
     </Card>
   );
