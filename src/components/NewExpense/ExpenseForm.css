@@ -1,9 +1,10 @@
 .newexpense {
-  background: #1da8df;
+  background: #ffffff;
   color: black;
   margin-top: 2rem;
   border-radius: 0.4rem;
-  padding: 2rem;
+  padding: 1rem;
+  border: 2px solid #00b7ff;
 }
 
 h1 {
@@ -11,6 +12,7 @@ h1 {
 }
 .form-controls {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .control {
@@ -20,11 +22,12 @@ h1 {
 }
 input {
   padding: 0.2rem;
-  width: 50%;
+  width: 100%;
   border-radius: 0.2rem;
   border: 0;
   outline: 0;
   font-size: 1.4rem;
+  border: 2px solid #00b7ff;
 }
 button {
   font-size: 1.2rem;
@@ -33,9 +36,11 @@ button {
   border-radius: 0.3rem;
   border: 0;
   outline: 0;
-  background: rgb(255, 0, 255);
-  border: 1px solid white;
+  background: rgb(19, 90, 170);
   color: white;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .button {
   font-size: 1.2rem;

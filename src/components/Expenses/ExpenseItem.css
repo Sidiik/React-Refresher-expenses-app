@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(29, 168, 223);
+  background-color: rgb(0, 183, 255);
   padding: 0.5rem;
   margin: 1rem;
   border-radius: 0.4rem;
@@ -12,8 +12,9 @@
 }
 .e-price {
   background-color: rgb(45, 3, 85);
-  padding: 0.4rem;
+  padding: 0.4rem 1rem;
   border-radius: 0.3rem;
+  border: 2px solid rgb(255, 255, 255);
 }
 
 .e-description {

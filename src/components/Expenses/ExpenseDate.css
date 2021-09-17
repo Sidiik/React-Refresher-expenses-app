@@ -1,8 +1,9 @@
 .e-date {
   background: rgb(6, 49, 78);
-  padding: 0.7rem;
+  padding: 1rem 2rem;
   border-radius: 0.5rem;
   border: 2px solid #fff;
+  user-select: none;
 }
 .month {
   font-size: 1rem;
